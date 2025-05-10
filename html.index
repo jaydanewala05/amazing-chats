@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Chat with Llama 3.2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-title">Amazing Chat</div>
+            <button class="toggle-sidebar" id="toggle-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <button class="new-chat-btn" id="new-chat-btn">
+            <i class="fas fa-plus"></i> New Chat
+        </button>
+        <div class="conversation-list" id="conversation-list">
+            <div class="conversation-item" id="getting-started-btn">
+                <i class="fas fa-rocket"></i> Getting Started
+            </div>
+            <div class="conversation-item" id="tech-support-btn">
+                <i class="fas fa-headset"></i> Tech Support
+            </div>
+            <div class="model-info">
+                <strong>Current Model:</strong><br>
+                Llama 3.2 (via Ollama)
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CHAT AREA -->
+    <div class="main-content">
+        <div class="header">
+            <button class="header-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">Amazing Chat</div>
+            <div class="header-actions">
+                <button class="header-btn" id="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="header-btn" id="settings-btn">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will appear here -->
+            </div>
+            <div class="input-area">
+                <input type="text" class="message-input" id="user-input" placeholder="Type your message..." autocomplete="off">
+                <button class="send-button" id="send-button">
+                    <i class="fas fa-paper-plane send-icon"></i>
+                    <i class="fas fa-spinner loading-icon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
